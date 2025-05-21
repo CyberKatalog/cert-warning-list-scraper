@@ -1,5 +1,7 @@
 # CERT.PL Warning List Scraper
 
+[![Download CERT.PL Files](https://github.com/silesiansolutions/cert-warning-list-scraper/actions/workflows/download-cert-files.yml/badge.svg)](https://github.com/silesiansolutions/cert-warning-list-scraper/actions/workflows/download-cert-files.yml)
+
 This project automatically downloads and maintains an archive of CERT.PL domain action logs from their public repository.
 
 ## Features
@@ -45,6 +47,10 @@ This project automatically downloads and maintains an archive of CERT.PL domain 
 - `setup_cron.sh` - Script for setting up cron jobs
 - `metadata.json` - File containing metadata about each downloaded file
 
+## Sample Outputs
+
+Sample outputs from this tool can be found at: https://github.com/silesiansolutions/cert-warning-list-scraper/tree/sample_output
+
 ## Metadata Format
 
 The metadata.json file maintains information about each downloaded file in the following format:
@@ -84,6 +90,7 @@ This repository includes a GitHub Actions workflow that:
 You can also trigger the workflow manually from the GitHub Actions tab in your repository.
 
 To access the downloaded artifacts:
+
 1. Go to the "Actions" tab in your GitHub repository
 2. Click on the latest workflow run
 3. Scroll down to the "Artifacts" section
