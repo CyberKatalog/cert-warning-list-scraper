@@ -1,0 +1,76 @@
+CERT.PL Domain Actions Summary Report
+Generated on: Thu May 22 00:34:24 CEST 2025
+------------------------------------------
+
+Files available:
+
+Filename             Size            Downloads       Last Success              Last Check               
+--------             ----            ---------       ------------              ----------               
+actions_2020.log     1026300         1               2025-05-22 00:34:15       2025-05-22 00:34:15      
+actions_2021.log     4683653         1               2025-05-22 00:34:16       2025-05-22 00:34:16      
+actions_2022.log     6006624         1               2025-05-22 00:34:16       2025-05-22 00:34:16      
+actions_2023.log     11187469        1               2025-05-22 00:34:17       2025-05-22 00:34:17      
+actions_2024.log     12669374        1               2025-05-22 00:34:17       2025-05-22 00:34:17      
+actions_2025.log     8191407         1               2025-05-22 00:34:17       2025-05-22 00:34:17      
+
+Total size of all files:  42M (       6 files)
+
+Recent download failures:
+No recent failures detected.
+
+Download statistics from metadata:
+------------------------------------------
+File: actions_2020.log
+  URL: https://hole.cert.pl/domains/v2/actions_2020.log
+  Size: 1026300 bytes
+  Checksum: bcc553190c473d06eeedc32f0ea5a31864281b46d69b8aede4998547b1d2b8fa
+  Download time: 0 seconds
+  Last successful download: 2025-05-22 00:34:15
+  Last check: 2025-05-22 00:34:15
+  Download count: 1
+
+File: actions_2021.log
+  URL: https://hole.cert.pl/domains/v2/actions_2021.log
+  Size: 4683653 bytes
+  Checksum: cf5c04aeecb3a7176486953617a7c1f01c31982df7b8078974af7e6e06c589bc
+  Download time: 0 seconds
+  Last successful download: 2025-05-22 00:34:16
+  Last check: 2025-05-22 00:34:16
+  Download count: 1
+
+File: actions_2022.log
+  URL: https://hole.cert.pl/domains/v2/actions_2022.log
+  Size: 6006624 bytes
+  Checksum: f6ac0b10051c06682be28a8796eac5ae2bdaea7f8d0ad70830a7ca1cb16fa331
+  Download time: 0 seconds
+  Last successful download: 2025-05-22 00:34:16
+  Last check: 2025-05-22 00:34:16
+  Download count: 1
+
+File: actions_2023.log
+  URL: https://hole.cert.pl/domains/v2/actions_2023.log
+  Size: 11187469 bytes
+  Checksum: 9d8604a829ffb9b3f84eec450a856b4761632d18a953d0115e406bbeae66ecfd
+  Download time: 1 seconds
+  Last successful download: 2025-05-22 00:34:17
+  Last check: 2025-05-22 00:34:17
+  Download count: 1
+
+File: actions_2024.log
+  URL: https://hole.cert.pl/domains/v2/actions_2024.log
+  Size: 12669374 bytes
+  Checksum: e4228c8b868730151499cc11c73a36e67e7b3ea284b7a97f7eb1b4bdbd12417f
+  Download time: 0 seconds
+  Last successful download: 2025-05-22 00:34:17
+  Last check: 2025-05-22 00:34:17
+  Download count: 1
+
+File: actions_2025.log
+  URL: https://hole.cert.pl/domains/v2/actions_2025.log
+  Size: 8191407 bytes
+  Checksum: 616d696b910f474eb0f2c86a43f5c56def2c7484a7710d6f7017f5758b944d93
+  Download time: 0 seconds
+  Last successful download: 2025-05-22 00:34:17
+  Last check: 2025-05-22 00:34:17
+  Download count: 1
+
