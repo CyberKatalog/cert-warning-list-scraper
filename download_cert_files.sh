@@ -27,7 +27,15 @@ calculate_checksum() {
 update_metadata() {
   local file="$1"
   local url="$2"
-  local filesize=$(stat -f %z "$file")
+  local filesize
+  # Check system type for stat compatibility
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    # macOS
+    filesize=$(stat -f %z "$file")
+  else
+    # Linux and other systems
+    filesize=$(stat -c %s "$file")
+  fi
   local checksum=$(calculate_checksum "$file")
   local download_time="$3"
   local success="$4"

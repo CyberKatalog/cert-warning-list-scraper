@@ -1,0 +1,53 @@
+name: Download CERT.PL Files
+
+on:
+  # Run on a schedule (daily at 3:00 UTC)
+  schedule:
+    - cron: '0 3 * * *'
+  
+  # Allow manual trigger from GitHub UI
+  workflow_dispatch:
+
+jobs:
+  download-and-archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl jq
+
+      - name: Make script executable
+        run: chmod +x ./download_cert_files.sh
+
+      - name: Run download script
+        run: ./download_cert_files.sh
+
+      - name: Check downloaded data
+        run: |
+          echo "Listing downloaded files:"
+          ls -la ./data/
+          echo "Metadata content:"
+          cat ./metadata.json
+
+      - name: Archive data files as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cert-pl-data
+          path: ./data/
+          retention-days: 30
+
+      - name: Create ZIP archive
+        run: |
+          zip -r cert-pl-data-$(date +%Y-%m-%d).zip ./data/
+          echo "Created ZIP file: cert-pl-data-$(date +%Y-%m-%d).zip"
+
+      - name: Upload ZIP as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cert-pl-data-zip
+          path: cert-pl-data-*.zip
+          retention-days: 30
