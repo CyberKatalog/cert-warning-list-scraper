@@ -102,3 +102,11 @@ To access the downloaded artifacts:
 - curl
 - jq (for JSON processing)
 - shasum (for checksum calculation)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+## Author
+
+This project was created for [CyberKatalog](https://cyberkatalog.pl) and developed by [Silesian Solutions](https://silesiansolutions.com).
