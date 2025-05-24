@@ -1,7 +1,5 @@
 # CERT.PL Warning List Scraper
 
-[![Download CERT.PL Files](https://github.com/silesiansolutions/cert-warning-list-scraper/actions/workflows/download-cert-files.yml/badge.svg)](https://github.com/silesiansolutions/cert-warning-list-scraper/actions/workflows/download-cert-files.yml)
-
 This project automatically downloads and maintains an archive of CERT.PL domain action logs from their public repository.
 
 ## Features
@@ -11,7 +9,6 @@ This project automatically downloads and maintains an archive of CERT.PL domain 
 - Maintains detailed metadata about each file (size, checksum, download times, etc.)
 - Generates summary reports of the downloaded data
 - Configures cron jobs for automatic updates
-- Provides GitHub Actions workflow for automated downloads and artifact creation
 
 ## Setup
 
@@ -77,24 +74,6 @@ By default, the download script runs daily at 3:00 AM and the analyze script run
 ```
 crontab -e
 ```
-
-## GitHub Actions Workflow
-
-This repository includes a GitHub Actions workflow that:
-
-1. Runs automatically every day at 3:00 UTC
-2. Executes the download_cert_files.sh script
-3. Creates a ZIP archive of the data folder
-4. Uploads the data as GitHub artifacts (both as a folder and a ZIP file)
-
-You can also trigger the workflow manually from the GitHub Actions tab in your repository.
-
-To access the downloaded artifacts:
-
-1. Go to the "Actions" tab in your GitHub repository
-2. Click on the latest workflow run
-3. Scroll down to the "Artifacts" section
-4. Download either the "cert-pl-data" folder or the "cert-pl-data-zip" ZIP file
 
 ## Requirements
 
